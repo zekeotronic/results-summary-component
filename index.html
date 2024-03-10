@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,8 +11,6 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <meta
       property="og:title"
       content="Eric Ihle | zekeotronic | Results Summary Component"
@@ -32,6 +28,7 @@
       content="https://zekeotronic.github.io/results-summary-component/"
     />
     <meta property="og:type" content="website" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body
     class="lg:flex lg:flex-col lg:items-center lg:justify-center h-screen lg:bg-very-light-blue"
@@ -46,14 +43,16 @@
         <div
           class="bg-gradient-2 rounded-full h-[140px] w-[140px] flex flex-col items-center justify-center"
         >
-          <p class="text-white text-score font-extrabold">76</p>
+          <p class="text-white text-score font-extrabold" id="score">76</p>
           <p class="text-light-blue font-bold opacity-50">of 100</p>
         </div>
-        <p class="text-white font-bold text-great text-center">Great</p>
+        <p class="text-white font-bold text-great text-center" id="message">
+          Great
+        </p>
         <div class="px-4">
           <p class="text-light-blue text-center">
-            You scored higher than 65% of the people who have taken the test
-            here!
+            You scored higher than <span id="percent">65</span>% of the people
+            who have taken the test here!
           </p>
         </div>
       </div>
@@ -69,7 +68,7 @@
             <p class="text-reaction font-medium">Reaction</p>
           </div>
           <div>
-            <span class="text-dark-navy font-bold">80</span>
+            <span class="text-dark-navy font-bold" id="reaction">80</span>
             <span class="text-dark-navy font-bold opacity-50">/ 100</span>
           </div>
         </div>
@@ -81,7 +80,7 @@
             <p class="text-memory font-medium">Memory</p>
           </div>
           <div>
-            <span class="text-dark-navy font-bold">92</span>
+            <span class="text-dark-navy font-bold" id="memory">92</span>
             <span class="text-dark-navy font-bold opacity-50">/ 100</span>
           </div>
         </div>
@@ -93,7 +92,7 @@
             <p class="text-verbal font-medium">Verbal</p>
           </div>
           <div>
-            <span class="text-dark-navy font-bold">61</span>
+            <span class="text-dark-navy font-bold" id="verbal">61</span>
             <span class="text-dark-navy font-bold opacity-50">/ 100</span>
           </div>
         </div>
@@ -105,8 +104,8 @@
             <p class="text-visual font-medium">Visual</p>
           </div>
           <div>
-            <span class="text-dark-navy font-bold">72 </span
-            ><span class="text-dark-navy font-bold opacity-50">/ 100</span>
+            <span class="text-dark-navy font-bold" id="visual"> 72 </span
+            ><span class="text-dark-navy font-bold opacity-50"> / 100</span>
           </div>
         </div>
         <div

@@ -1,47 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <meta
+      property="og:title"
+      content="Eric Ihle | zekeotronic | Results Summary Component"
+    />
+    <meta
+      property="og:description"
+      content="Frontend Mentor | Newbie Level Challenge"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/zekeotronic/results-summary-component/main/desktop-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://zekeotronic.github.io/results-summary-component/"
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body
+    class="lg:flex lg:flex-col lg:items-center lg:justify-center h-screen lg:bg-very-light-blue"
+  >
+    <main
+      class="w-full min-w-[375px] md:w-full lg:w-3/5 md:h-auto lg:h-auto font-hanken flex flex-col lg:flex-row gap-6 items-center lg:my-44 lg:rounded-[32px] lg:bg-white lg:max-w-[736px]"
+    >
+      <div
+        class="bg-gradient-1 bg-contain bg-no-repeat flex flex-col gap-6 items-center p-6 rounded-b-[32px] lg:rounded-[32px]"
+      >
+        <h1 class="text-light-blue font-bold text-lg">Your Result</h1>
+        <div
+          class="bg-gradient-2 rounded-full h-[140px] w-[140px] flex flex-col items-center justify-center"
+        >
+          <p class="text-white text-score font-extrabold">76</p>
+          <p class="text-light-blue font-bold opacity-50">of 100</p>
+        </div>
+        <p class="text-white font-bold text-great text-center">Great</p>
+        <div class="px-4">
+          <p class="text-light-blue text-center">
+            You scored higher than 65% of the people who have taken the test
+            here!
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col w-full items-center px-7 gap-[10px] lg:bg-white"
+      >
+        <p class="text-dark-navy text-lg/4 self-start font-bold">Summary</p>
+        <div
+          class="rounded-xl px-3.5 py-3 flex w-full items-center justify-between bg-reaction lg:gap-6"
+        >
+          <div class="flex gap-2">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+            <p class="text-reaction font-medium">Reaction</p>
+          </div>
+          <div>
+            <span class="text-dark-navy font-bold">80</span>
+            <span class="text-dark-navy font-bold opacity-50">/ 100</span>
+          </div>
+        </div>
+        <div
+          class="rounded-xl px-3.5 py-3 flex w-full items-center justify-between bg-memory"
+        >
+          <div class="flex gap-2">
+            <img src="./assets/images/icon-memory.svg" alt="Memory" />
+            <p class="text-memory font-medium">Memory</p>
+          </div>
+          <div>
+            <span class="text-dark-navy font-bold">92</span>
+            <span class="text-dark-navy font-bold opacity-50">/ 100</span>
+          </div>
+        </div>
+        <div
+          class="rounded-xl px-3.5 py-3 flex w-full items-center justify-between bg-verbal"
+        >
+          <div class="flex gap-2">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+            <p class="text-verbal font-medium">Verbal</p>
+          </div>
+          <div>
+            <span class="text-dark-navy font-bold">61</span>
+            <span class="text-dark-navy font-bold opacity-50">/ 100</span>
+          </div>
+        </div>
+        <div
+          class="rounded-xl px-3.5 py-3 flex w-full items-center justify-between bg-visual"
+        >
+          <div class="flex gap-2">
+            <img src="./assets/images/icon-visual.svg" alt="visual" />
+            <p class="text-visual font-medium">Visual</p>
+          </div>
+          <div>
+            <span class="text-dark-navy font-bold">72 </span
+            ><span class="text-dark-navy font-bold opacity-50">/ 100</span>
+          </div>
+        </div>
+        <div
+          class="rounded-full px-3.5 py-3 flex w-full items-center justify-center bg-dark-navy lg:hover:bg-gradient-1 lg:transition-colors lg:cursor-pointer"
+        >
+          <p class="text-white font-bold">Continue</p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
